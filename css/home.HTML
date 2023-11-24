@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap" rel="stylesheet">
+    <title>Go Freelance Academy أكاديمية غو فريلانس</title>
+    <link rel="icon" href="photo.jpg" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+
+
+
+    
+
+</head>
+<body >
+
+    
+   
+
+
+
+ 
+
+    <header class="header">
+ 
+
+
+<div class="menu-icon" id="menu-icon">
+   <i class="fa fa-bars"></i>
+</div>
+
+<div class="language-selector">
+   <i id="language-icon" class="fa fa-language"></i>
+   <select id="language-dropdown">
+       <option value="ar">العربية</option>
+       <option value="en">English</option>
+       <option value="fr">Francais</option>
+   </select>
+</div>
+
+<script>
+var languageIcon = document.getElementById('language-icon');
+var languageDropdown = document.getElementById('language-dropdown');
+
+languageIcon.addEventListener('click', function() {
+    languageDropdown.classList.toggle('active');
+});
+
+languageDropdown.addEventListener('change', function() {
+    var selectedLanguage = languageDropdown.value;
+
+    if (selectedLanguage === 'ar') {
+      languageIcon.className = 'fa fa-language'; // Icône pour l'arabe (Arabie saoudite)
+    } else if (selectedLanguage === 'en') {
+      languageIcon.className = 'fa fa-globe'; // Icône de drapeau des États-Unis pour l'anglais
+    } else if (selectedLanguage === 'fr') {
+      languageIcon.className = 'fa fa-globe'; // Icône de drapeau de la France pour le français
+    }
+
+    languageDropdown.classList.remove('active');
+});
+
+
+
+</script>
+     <nav class="navbar" id="navbar">
+        <a href="#home"  class="navbar-link active">الرِئسية </a>
+        <a href="#about"   class="navbar-link ">لماذا نحن؟</a>
+        <a href="#Services" class="navbar-link ">كيف نعمل ؟</a>
+        <a href="#inscription-section" class="navbar-link ">كيف اسجل ؟</a>
+        <a href="#project" class="navbar-link "> خدماتنا</a>
+        <a href="#team"  class="navbar-link ">فريقنا
+        </a>
+   
+     </nav>
+
+     <a href="#"  class="logo">
+        <img  src="images/logo.png" >
+
+     </a>
+        </header>
+
+        
+      
+         
+    
+     
+ <script>
+document.getElementById('menu-icon').addEventListener('click', function() {
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle('active');
+});
+
+
+
+
+
+
+
+ </script>
+
+
+
+
+
+<section   id="home" class="home active">
+   
+   <div class="home-content">
+      <h1 class="modern-title">  أكاديمية غو فريلانس</h1>
+
+<h3  id="animated-text" class="modern-animation"> بوابتك الاولى جزائريا في خدمات وكورسات العمل الحر عبر الانترنت</h3>
+<p>أهلاً بك في عالم الفرص والتحديات! أكاديمية 'غو فريلانس' هي المكان الذي تنمي فيه مهاراتك وتحقق أهدافك المهنية. إذا كنت تبحث عن فرصة لتعلم وتطوير نفسك في عالم العمل الحر عبر الإنترنت، فأنت في المكان الصحيح. انضم إلينا اليوم وابدأ رحلتك نحو النجاح والتميز. لا حدود لما يمكن أن تحققه عندما تكون مستعدًا للاستثمار في نفسك. انطلق الآن وكن جزءًا من مجتمعنا الملهم</p>
+ <div class="btn-box">
+   <a href="#">  ! احجز مكانك الان</a>
+ </div>
+   </div>
+
+   <div class="home-sci">
+      <a href="#"> <i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href=""><i class='bx bxl-telegram'></i></a>
+   </div>
+   
+   <img src="2.png" alt="Description de l'image"> 
+</section>
+
+  
+
+
+<h2  class="heading"  > لماذا أكادمية<span>غو فريلانس ؟  </span></h2>
+<section class="presentation" id="about">
+ 
+
+
+
+    <div class="glass-card">
+        <i class="fas fa-users"></i>
+        <h3>فريق العمل</h3>
+        <p>اكتشف فريقنا المخلص والموهوب الذي يعمل بجد لتقديم أفضل الخدمات والمشاريع.</p>
+    </div>
+    <div class="glass-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>خدماتنا</h3>
+        <p>استكشف خدماتنا الابتكارية والإبداعية التي تساعد على تحقيق أهدافك بنجاح.</p>
+    </div>
+    <div class="glass-card">
+        <i class="fas fa-bullseye"></i>
+        <h3>رسالتنا</h3>
+        <p>فهم وتلبية احتياجاتك هو مهمتنا. نحن ملتزمون بتقديم أفضل الخدمات لك.</p>
+    </div>
+</section>
+
+
+
+<section class="Services" id="Services"> 
+   <div class="container">
+      <h2  class="heading">  كيف نعمل في أكاديمية<span>غو فريلانس ؟  </span></h2>
+   
+      <div class="Services-list">
+         <div>
+            <i class='bx bx-wallet'></i>
+            <h2> إفتتاح مشروعك الأول وبداية تحقيق الأرباح</h2>
+         
+            <p>
+               تبدأ خدماتنا من عند العميل حيث يختار الكورس الإحترافي المناسب لخدماته والتي سيقدمها لزبائنه مستقبلا بطريقة احترافية بعد تعلمه من الكورس الذي سيمد العميل بخبرة تفوق 5 سنوات في المجال الذي اختاره لدخول عالم التجارة الالكترونية وبداية تحقيقه لارباحه التي يطلبها
+            </p>
+            <a href="#" class="read"> اقرأ المزيد</a>
+         </div>
+         <div>
+            <i class='bx bx-wallet'></i>
+            <h2>بداية الكورس و بداية إكتشاف العالم المخفي لك</h2>
+            <p>
+               سيكون العميل سعيدا مباشرة بعد بداية الكورس لانه سيكتشف العالم المخفي له خصوصا اننا سنقدم عبر أستاذتنا بخبرتهم الكبيرة في مجال التجارة الالكترونية عدة أسرار وخفايا لتحقيق احترافية كبيرة جدا في مجال التجارة الالكترونية وكيفية بداية مشروعك خطوة بخطوة الى غاية تحقيق الأرباح منه بطريقة احترافية وغير مسبوقة في الجزائر
+            </p>
+            <a href="#" class="read"> اقرأ المزيد </a>
+         </div>
+         <div>
+            <i class='bx bx-wallet'></i> 
+          
+            <h2>
+               إختيار الكورس الذي سيعلمك المجال الذي ترغب به</h2>
+            <p>بعد ان ينتهي العميل من الكورس الذي سيعلمه معرفة كبيرة وتعطيه خبرة كبيرة ستجعله يحترف عدة مجالات من احتراف الترويج بطريقة ستضمن لك النجاحات وارباح ومبيعات الى غاية دخوله لعالم التجارة الالكترونية وانشاء متجره الالكترونية وبداية مبيعات لمنتجاته وتحقيقه للأرباح الى غاية تطويره ومنافسة شركات ومنصات أخرى في السوق بشكل احترافي</p>
+            <a href="#" class="read"> اقرأ المزيد</a>
+         </div>
+      </div>
+   </div>
+     
+ 
+</section>
+<section id="project" class="project">
+   <div>
+       <div class="main-text" id="project">
+
+   <h2 class="headingh2">خدمات اكادمية<span>غو فريلانس</span></h2>
+           <div class="portfolio-content">
+               <div class="row" onclick="toggleReserveButton(this)">
+                   <img src="images/commerce.jpg" alt="">
+                   <div class="layer">
+                       <h5>كورس التجارة الإلكترونية
+                     </h5>
+                       <p>خلال هذه الدورة، ستتعلم كيفية إنشاء متجر إلكتروني ناجح وكيفية تسويق منتجاتك عبر الإنترنت. ستكتسب المهارات الأساسية في تصميم وإدارة المواقع الإلكترونية والتعرف على أحدث التقنيات في مجال التجارة الإلكترونية
+
+                       </p>
+                       <button class="reserve-button">انضم الان</button>
+                   </div>
+               </div>
+
+               <div class="row" onclick="toggleReserveButton(this)">
+                   <img src="images/design.jpg" alt="">
+                   <div class="layer">
+                       <h5>كورس التصميم</h5>
+                       <p>هذه الدورة تقدم لك الفرصة لاستكشاف عوالم متعددة في مجال التصميم، سواء كنت مهتمًا بتصميم الجرافيك، تصميم الويب، تصميم الأزياء أو غيرها. ستتعلم أساسيات التصميم وتطبيقاتها العملية، بالإضافة إلى التقنيات الحديثة والأدوات التي تساعدك على الابتكار وإنشاء أعمال فنية مميزة</p>
+                       <button class="reserve-button">انضم الان</button>
+                   </div>
+               </div>
+
+               <div class="row" onclick="toggleReserveButton(this)">
+                   <img src="images/englais.jpg" alt="">
+                   <div class="layer">
+                       <h5> كورس اللغة الإنجليزية </h5>
+                       <p>يتميز كورسنا بأساليب تعليمية حديثة وتفاعلية. ستجد نفسك مشجعًا على المشاركة في مناقشات مثيرة وتمارين تفاعلية تجعل عملية التعلم ممتعة. نستخدم أحدث التقنيات والمصادر التعليمية لضمان تقديم تجربة تعليمية مميزة</p>
+                       <button class="reserve-button">انضم الان</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+
+<script>
+   function toggleReserveButton(element) {
+       // Cache tous les boutons "Réserver" sur toutes les divs
+       const allButtons = document.querySelectorAll('.reserve-button');
+       allButtons.forEach(button => button.classList.remove('show'));
+
+       // Affiche le bouton "Réserver" de la div cliquée
+       const reserveButton = element.querySelector('.reserve-button');
+       reserveButton.classList.add('show');
+   }
+</script>
+         
+
+<section  class="inscription-section" id="inscription-section">
+    <h2 class="heading"> كيفية التسجيل <span>   في أكاديمية غو فريلانس ؟ </span></h2>
+   <div class="container">
+      
+       <div class="inscription-steps">
+           <div class="inscription-step">
+            <i class="fa fa-check"></i>
+               <h3>الخطوة 4</h3>
+               <p>قم بتأكيد تسجيلك وابدأ في التعلم معنا </p>
+           </div>
+           <div class="inscription-step">
+               <i class="fa fa-envelope"></i>
+               <h3>الخطوة 3</h3>
+               <p>سيتواصل معكم فريقنا من اجل الدفع ثم ارسال لك رابط الدورة من أجل التسجيل</p>
+           </div>
+           <div class="inscription-step">
+            <i class="fa fa-envelope"></i>
+               <h3>الخطوة 2</h3>
+               <p>قم بمراسلاتنا على صفحتنا عبر الفيسبوك او عبر الاتصال بنا عبر رقم الهاتف من اجل حجز مكان لك</p>
+           </div>
+           <div class="inscription-step">
+            <i class="fa fa-book"></i>
+               <h3>الخطوة 1</h3>
+               <p> اختر الدورات التي تهمك من بين تشكيلتنا المتنوعة</p>
+             
+           </div>
+       </div>
+   </div>
+</section>
+
+
+
+
+
+
+
+
+<script>
+   const inscriptionSteps = document.querySelectorAll('.inscription-step');
+
+inscriptionSteps.forEach((step) => {
+    step.addEventListener('mouseover', () => {
+        step.style.transform = 'scale(1.05)';
+        step.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.3)';
+    });
+
+    step.addEventListener('mouseout', () => {
+        step.style.transform = 'scale(1)';
+        step.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.1)';
+    });
+});
+
+</script>
+
+
+<section id="team">
+
+    <h2 class="headingh2" > فريق<span>    أكاديمية غو فريلانس </span></h2>
+
+<div class="home-container">
+   
+    
+      
+
+
+    <div class="profile-card">
+        <div class="imgteam">
+            <img src="photo.jpg">
+        </div>
+        <div class="captionteam">
+            <h3>احمد حمزة</h3>
+            <p>مؤسس أكاديمية غو فريلانس</p>
+         
+            
+            <div class="social-links">
+               <i class='bx bxl-facebook'></i>
+             <i class='bx bxl-instagram'></i>
+               <i class='bx bxl-telegram'></i>
+            </div>
+
+        </div>
+    </div>
+  
+    <div class="profile-card">
+        <div class="imgteam">
+            <img src="photo.jpg">
+        </div>
+        <div class="captionteam">
+            <h3>Vin Diesel</h3>
+            <p>Back End Developer</p>
+          
+   <div class="social-links">
+     <i class='bx bxl-facebook'></i>
+   <i class='bx bxl-instagram'></i>
+   <i class='bx bxl-telegram'></i>
+ </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<footer>
+    <div class="containerfotter">
+        <div class="rowfotter">
+           
+            <div class="col" id="contact">
+                <h3>الاتصال</h3>
+                <div class="contact-details">
+                    <i class="fa fa-phone"></i>
+                    <p>+1-8755856858</p>
+                </div>
+            </div>
+        
+
+            <div class="col" id="services">
+                <h3>الخدمات</h3>
+                <div class="links">
+                    <a href="#">الرسم</a>
+                    <a href="#">الإبداع</a>
+                    <a href="#">تصميم البوسترات</a>
+                    <a href="#">تصميم البطاقات</a>
+                </div>
+            </div>
+
+            <div class="col" id="useful-links">
+                <h3>روابط مفيدة</h3>
+                <div class="links">
+                    <a href="#">حولنا</a>
+                    <a href="#">خدماتنا</a>
+                    <a href="#">سياستنا</a>
+                    <a href="#">المساعدة</a>
+                </div>
+            </div>
+
+            <div class="col" id="company">
+                <img src="images/logo.png" alt="" class="logo">
+                <p>
+                    نحن متخصصون في التصميم، نجعل أعمالك علامة تجارية
+                    جرب خدماتنا الرائعة
+                </p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                   
+                </div>
+            </div>
+            
+        </div>
+       
+
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script>
+  const textElement = document.getElementById("animated-text");
+  
+  // Fonction pour changer le texte avec une animation
+  function changeText() {
+    gsap.to(textElement, {
+      duration: 0.3, // Durée de l'animation en secondes
+      opacity: 0, // Réduire l'opacité pour masquer le texte actuel
+      onComplete: function() {
+        textElement.textContent = " نحن نؤمن بإمكانياتك انضم إلى 'غو فريلانس' لاستكشاف مواهبك وتحويلها إلى نجاح مهني"
+        gsap.to(textElement, {
+          duration: 0.3, // Durée de l'animation en secondes
+          opacity: 1, // Augmenter l'opacité pour afficher le nouveau texte
+        });
+      }
+    });
+  }
+  
+  // Ajouter un événement de survol pour déclencher l'animation
+  textElement.addEventListener("mouseover", changeText);
+</script>
+
+
+
+
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+       const sections = document.querySelectorAll('section');
+
+       sections.forEach(section => {
+           section.style.transform = 'translateX(100%)';
+           section.style.opacity = 0;
+       });
+
+       sections[0].style.transform = 'translateX(0)';
+       sections[0].style.opacity = 1;
+   });
+
+   const navLinks = document.querySelectorAll('.navbar-link');
+   const sections = document.querySelectorAll('section');
+
+   navLinks.forEach(link => {
+       link.addEventListener('click', (e) => {
+           e.preventDefault();
+
+           const targetId = link.getAttribute('href').substring(1);
+           const targetSection = document.getElementById(targetId);
+
+           sections.forEach(section => {
+               section.style.transform = 'translateX(100%)';
+               section.style.opacity = 0;
+           });
+
+           targetSection.style.transform = 'translateX(0)';
+           targetSection.style.opacity = 1;
+
+           // Ajuster la position de défilement
+           window.scrollTo({
+               top: targetSection.offsetTop,
+               behavior: 'smooth'
+           });
+       });
+   });
+</script>
+
+
+<script>
+   window.addEventListener('scroll', function() {
+       const header = document.querySelector('.header');
+       const scrollPosition = window.scrollY;
+
+       // Vous pouvez ajuster cette valeur pour déterminer à quelle position
+       // le changement de couleur doit se produire.
+       const scrollThreshold = 200;
+
+       if (scrollPosition > scrollThreshold) {
+           header.style.backgroundColor = '#0c192c';
+           // Remplacez 'votre-couleur' par la couleur souhaitée (par exemple, 'blue' ou '#FF0000').
+       } else {
+           header.style.backgroundColor = 'transparent';
+           // Remplacez 'transparent' par la couleur d'origine de votre en-tête.
+       }
+   });
+</script>
+
+
+
+
+
+        </body>
+
+        </html>

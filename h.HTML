@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes de verre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .presentation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+        }
+
+        .glass-card {
+            background-color: transparent;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid transparent;
+            border-image: repeating-conic-gradient(#0092c6, transparent 5%, #0092c6 15%) 1;
+            border-image-slice: 1;
+            animation: borderSpin 4s linear infinite;
+        }
+
+        .glass-card:hover {
+            transform: scale(1.05);
+        }
+
+        .glass-card i {
+            font-size: 40px;
+            color: #0092c6;
+            padding: 20px 0;
+        }
+
+        .glass-card h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .glass-card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="presentation">
+        <div class="glass-card">
+            <i class="fas fa-users"></i>
+            <h3>فريق العمل</h3>
+            <p>اكتشف فريقنا المخلص والموهوب الذي يعمل بجد لتقديم أفضل الخدمات والمشاريع.</p>
+        </div>
+        <div class="glass-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>خدماتنا</h3>
+            <p>استكشف خدماتنا الابتكارية والإبداعية التي تساعد على تحقيق أهدافك بنجاح.</p>
+        </div>
+        <div class="glass-card">
+            <i class="fas fa-bullseye"></i>
+            <h3>رسالتنا</h3>
+            <p>فهم وتلبية احتياجاتك هو مهمتنا. نحن ملتزمون بتقديم أفضل الخدمات لك.</p>
+        </div>
+    </section>
+</body>
+</html>

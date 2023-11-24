@@ -1,0 +1,971 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0
+    ;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background: #0c192c;
+    overflow-x: hidden;
+    color: #ededed;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour le header */
+    transition: 0.3s; /* Animation de transition */
+}
+.logo img {
+    width: 160px; /* Ajustez la largeur du logo selon vos besoins */
+    height: auto; /* Cela permet de conserver les proportions */
+}
+
+.logo ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#0c192c;
+    animation: showRight 1s ease forwards;
+    animation-delay: .1s;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active
+ {
+
+    color: #601cfc;
+}
+
+.home  {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: url('1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.home-content {
+
+max-width: 600px;
+
+}
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: right;
+}
+
+
+
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#0c192c;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #601cfc;
+    text-align: right;
+}
+
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#0c192c;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+
+}
+.home-content p {
+    font-size: 18px;
+    margin: 20px 0 40px;
+    text-align: right;
+  
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+
+}
+.home-content .btn-box::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#0c192c;
+    animation: showRight 1s ease forwards;
+    animation-delay: .9s; 
+    z-index: 2;
+}
+.btn-box a {
+    position: relative;
+ align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background: #601cfc;
+    border: 2px solid #601cfc;
+    font-size: 19px;
+text-decoration: none;
+color: #ededed;
+font-weight: 600;
+    border-radius:8px ;
+z-index: 1;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+.btn-box a::before 
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+z-index: -1;
+transition: .5s;
+background:#0c192c;
+}
+.btn-box a:hover::before 
+{
+width: 100%;
+
+}
+
+
+.btn-box a:hover{
+    color: #601cfc;
+} 
+
+.home-sci{
+ 
+    position: absolute;
+    bottom: 40px;
+    width:170px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#0c192c;
+    animation: showRight 1s ease forwards;
+    animation-delay: .9s; 
+    z-index: 2;
+}
+.home-sci  a{
+    position: relative;
+display: inline-flex;
+justify-content: center
+;
+color: #ededed;
+align-items: center;
+height: 40px;
+width: 40px;
+background: transparent;
+border: 2px solid #601cfc;
+border-radius: 50%;
+font-size: 20px;
+text-decoration: none;
+z-index: 1;
+overflow: hidden;
+transition: .5s;
+}
+.home-sci a::before {
+    content: '';
+    position:absolute;
+    top: 0;left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: #601cfc;
+
+}
+.home-sci a:hover::before {
+    width: 100%;
+
+}
+
+
+
+
+@keyframes showRight{
+    100% {
+        width: 0;
+
+    }
+}
+
+
+.about  {
+    display: flex;
+    justify-content: center
+    ;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-by-color);
+    padding-bottom: 6rem;
+}
+.heading{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+span{
+    color:#601cfc;
+}
+.about-img{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem  solid transparent;
+    transition: border-color 0.5s ease, transform 2s ease-in-out;
+    animation: borderSpin 4s linear infinite;
+}
+
+
+
+
+@keyframes borderSpin {
+    0% {
+        border-radius: 50%;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 40%;
+        transform: rotate(90deg);
+        border-color: #3498db; /* Couleur du bord en quart de tour */
+    }
+    50% {
+        border-radius: 50%;
+        transform: rotate(180deg);
+        border-color: #e74c3c; /* Couleur du bord en demi-tour */
+    }
+    75% {
+        border-radius: 60%;
+        transform: rotate(270deg);
+        border-color: #9a215b; /* Couleur du bord en trois quarts de tour */
+    }
+    100% {
+        border-radius: 50%;
+        transform: rotate(360deg);
+        border-color: #3498db; /* Couleur du bord en tour complet */
+    }
+}
+
+
+.about-img:hover img {
+    border-color:#07006d; /* Couleur du bord au survol */
+    transform: rotate(360deg); /* Rotation de l'image au survol */
+}
+
+  .about-content {
+  text-align: center;
+   
+ 
+     /* Ajustez la hauteur selon vos besoins pour centrer verticalement */
+    
+
+  }
+
+  .about-content h3 {
+    font-size: 2.6rem;
+  }
+ 
+
+  .btn-box .btns {
+    display: inline-block;
+    width: 15rem;
+
+
+  }
+  .btn-box .btns a::before {
+    background: #601cfc;
+  }
+
+#Services .active{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    animation: slideLeft 2s ease forwards;
+}
+
+  .container {
+    padding: 90px;
+
+  }
+  .Services-list {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+grid-gap:40px;
+margin-top: 50px;
+text-align: right;
+  }
+
+  .Services-list div{
+background-color: transparent;
+padding: 40px;
+font-size: 13px;
+font-weight: 13px;
+border-right: 10px;
+border-radius: 20px
+;
+transition: background 0.5s, transform 0.5s;
+box-shadow: 1px 1px  20px #601cfc,1px 1px 40px #fff;
+
+  }
+
+
+  .Services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+  }
+ 
+  .Services-list div h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+
+
+
+  .Services-list div p {
+    font-size: 14px;
+    color: #ededed; /* Couleur du texte du paragraphe */
+    margin-top: 10px; /* Espacement par rapport au titre */
+}
+
+
+
+
+  .Services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #601cfc;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #601cfc, 0 0 25px #601cfc;
+}
+
+.Services-list div:hover{
+    transform: translateY(-10px
+    );
+}
+@keyframes slidetop {
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+.home img {
+    width: 40%; /* Ajustez la largeur de l'image à droite selon vos besoins */
+    transform: perspective(1000px) rotateY(0deg); /* Appliquez une perspective et une rotation initiale */
+    transition: transform 0.5s ease; /* Ajoutez une transition fluide */
+}
+
+.home:hover img {
+    transform: perspective(1000px) rotateY(45deg); /* Au survol, effectuez une rotation de 45 degrés */
+}
+
+
+
+.main-text{
+    padding-top: 130px;
+    margin-top: 200px;
+
+}
+.main-text h2 {
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+.main-text h2 span {
+    color: #601cfc ;
+}
+
+
+       /* Styles pour la section project */
+       .project {
+        background-color:transparent; /* Couleur de fond de la section */
+        padding: 80px 0;
+      }
+      
+      .project .main-text {
+        text-align: center;
+      }
+      
+      .project .main-text .heading {
+        font-size: 28px;
+        font-weight: 700;
+      }
+      
+      .project .portfolio-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      
+      .project .row {
+        position: relative;
+        overflow: hidden;
+        margin: 0 10px 20px;
+        max-width: 300px;
+        background-color:#0c192c;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .project .row:hover {
+        transform: translateY(-5px);
+      }
+      
+      .project .row img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px 8px 0 0;
+      }
+      
+      .project .layer {
+        padding: 20px;
+      }
+      
+      .project .layer h5 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #601cfc;
+      }
+      
+      .project .layer p {
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: right;
+    
+      }
+      
+      .project .layer a {
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #007bff;
+        transition: color 0.3s;
+      }
+      
+      .project .layer a:hover {
+        color: #0056b3;
+      }
+      
+      
+            
+      .reserve-button {
+        display: none;
+        background-color: transparent;
+        color: #601cfc;
+        border: 2px solid #601cfc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 8px 20px;
+        font-size: 16px;
+        margin: 2rem;
+    }
+    
+    .reserve-button.show {
+        display: inline-block;
+        background-color:transparent;
+        color: #fff;
+        transform: scale(1.05); /* Animation d'agrandissement */
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Ombre pour l'effet de flottement */
+    }
+    
+    .reserve-button:hover {
+        background-color:#601cfc; /* Couleur au survol */
+    }
+    
+
+.footer-iconTop a i{
+
+    color: aliceblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: transparent;
+   
+   }
+   .footer-text p {
+    font-size: 1.6rem;
+   }
+   .footer-iconTop a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background:#601cfc;
+    border: .2rem solid #601cfc;
+    color: aliceblue;
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+   }
+   .footer-iconTop a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background: #0c192c;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+   }
+
+   .footer-iconTop a:hover::before{
+   width: 100%;
+   }
+
+
+
+
+   .modern-title {
+    font-size: 2rem;
+    color: transparent;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: moveAndChangeColor 5s linear infinite;
+}
+
+@keyframes moveAndChangeColor {
+    0% {
+        background-position: 0 0;
+        color: transparent;
+        transform: translateX(0);
+    }
+    50% {
+        background-position: 100% 100%;
+        color: #3498db;
+        transform: translateX(10px);
+    }
+    100% {
+        background-position: 0 0;
+        color: transparent;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.content-text {
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 18px; /* Taille de la police */
+    color: #fff; /* Couleur du texte */
+    padding: 20px; /* Marge intérieure pour l'espace autour du texte */
+    background-color:transparent; /* Couleur de fond du paragraphe */
+    /* Bordure du paragraphe */
+    white-space: normal;
+    border-radius: 10px; /* Rayon de la bordure pour des coins arrondis */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Animation de l'agrandissement, la couleur de fond et la couleur du texte */
+}
+
+.content-text:hover {
+    transform: scale(1.1); /* Agrandir le texte au survol */
+    background-color: #601cfc; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+    cursor: pointer; /* Curseur de souris en forme de main au survol */
+}
+
+
+.animated-heading {
+    animation: colorChange 3s infinite; /* Applique l'animation "colorChange" de 3 secondes en boucle infinie */
+}
+
+@keyframes colorChange {
+    0% {
+        color: #3498db; /* Couleur de départ */
+    }
+    25% {
+        color: #601cfc /* Première couleur de changement */
+    }
+    50% {
+        color: #3b5998; /* Deuxième couleur de changement */
+    }
+ 
+    100% {
+        color: #3498db; /* Retour à la couleur de départ */
+    }
+}
+
+
+.heading {
+  
+    animation: slideLeft 2s ease forwards;
+
+}
+
+
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+section {
+   
+  
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+
+
+
+/* Barre de défilement verticale */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Poignée (thumb) de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: #0c192c; /* Changez la couleur ici */
+    border-radius: 10px;
+}
+
+/* Barre de défilement track (arrière-plan) */
+::-webkit-scrollbar-track {
+    background: #0c192c; /* Changez la couleur ici */
+}
+
+/* Barre de défilement track (lorsque survolée) */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #601cfc; /* Changez la couleur ici */
+}
+
+
+
+
+/* Styles pour le menu mobile (masqué par défaut) */
+.mobile-menu {
+    display: none;
+    background-color: transparent;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    list-style: none;
+ 
+
+    border-radius: 10px;
+    text-align: right;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Afficher le menu mobile et masquer l'icône du menu */
+    #menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+        /* Changement de couleur pour le menu mobile */
+       
+    }
+
+    .mobile-menu a {
+        opacity: 1; /* Fait apparaître les éléments de menu un par un */
+    }
+
+    #navbar {
+        display: none;
+    }
+}
+
+.menu-icon {
+    display: none; /* Masqué par défaut sur les écrans non mobiles */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.square{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -150px;
+}
+
+.square span{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #ededed;
+    opacity: 0.5;
+}
+.square span:nth-child(1)
+{
+    border-radius: 46% 54% 61% 39% / 40% 40% 60% 60% ;
+    animation: animateSquare 6s linear infinite;
+}
+
+.square span:nth-child(2)
+{
+    border-radius: 68% 32% 61% 39% / 49% 52% 48% 51%;
+    animation: animateSquare 4s linear infinite;
+}
+
+
+
+.square span:nth-child(3)
+{
+    border-radius: 56% 44% 36% 64% / 51% 68% 32% 49% ;
+    animation: animateSquare2 10s linear infinite;
+}
+
+
+ @keyframes animateSquare
+ {
+    0% {
+transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+ }
+ @keyframes animateSquare2{
+    0% {
+        transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+ }
+
+
+ .iconteam {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+gap: 40px;
+ }
+ .iconteam .imgBX{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 0 0 4px #ededed;
+    opacity: 0.5;
+ }
+ .iconteam .imgBX .active{
+    opacity: 1;
+    scale: 1.2;
+    margin: 0 10px ;
+    box-shadow: 0 0 0 4px #ededed,
+     0 0 0 10px #601cfc,
+      0 0 0 12px #fff ;
+ }
+ .iconteam .imgBX img{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  hanging-punctuation: 100%;
+  object-fit: cover;
+
+ }
+
+ .contentBx {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: scale(0);
+    opacity: 0;
+ }
+
+ .contentBx .qctive {
+    transform: scale(0)   ;
+    opacity: 1;
+    transition-delay: 0.5s;
+
+
+
+ 
+ }
+ .contentBx  .card{
+    position:relative ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap:  15px;
+
+ }
+ .contentBx  .card .imgBX{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+ }
